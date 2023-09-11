@@ -1,0 +1,161 @@
+#container {
+  /* background-image: url(../images/aboutpageHeading.svg); */
+  background-size: cover;
+  height: 150px;
+  background-color: #ff4b66;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container h1 {
+  font-size: 72px;
+  color: white;
+  filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.626));
+  font-family: forum;
+  font-weight: 900;
+  text-transform:uppercase;
+}
+.headerbg {
+  height: 120px;
+  width: 353.4px;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.676));
+  background-image: url(../images/headerBg.png);
+  background-size: cover;
+}
+.headerbg:hover {
+  transform: translateY(10px);
+  transition: 1s ease;
+}
+
+.goal-section {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#goal-section-header {
+  height: 367px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/ab-1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.goal-section div h1 {
+  font-family: "Philosopher";
+  text-align: center;
+  font-size: 4.2em;
+}
+.goal-section1 {
+  background-image: url(../images/bg-5.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+#about-page-text {
+  height: max-content;
+  width: inherit;
+  padding: 25px;
+  background-image: url(../images/aboutbg.svg);
+  font-size: 1.5rem;
+  background-size: cover;
+  align-items: center;
+  line-height: 1.5;
+  word-spacing: 10px;
+  text-align: justify;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.about-ender-text {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit";
+  background-image: url(../images/BgImage.jpg);
+  background-size: contain;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  width: 490px;
+  margin: 10px 20px;
+  text-align: center;
+  height: 375px;
+  flex-direction: column;
+}
+
+.content-box:hover{
+  scale: 1.1;
+  transition: 750ms ease;
+  background:#ff4b66 ;
+  color: black;
+}
+
+/* for mobile layout */
+@media screen and (max-width: 650px) {
+  #container {
+    height: 102px;
+  }
+  #container h1 {
+    font-size: 38px;
+  }
+  .headerbg {
+    height: 35px;
+    width: 112.4px;
+  }
+  #about-page-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    word-spacing: 0;
+  }
+  .about-ender-text {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .goal-section div h1 {
+    font-size: 2em;
+  }
+  .goal-section1 {
+    background-image: url(../images/bg-6.jpg);
+  }
+  .content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit";
+    /* background-color: #ff4b66; */
+    font-size: 1rem;
+    background-image: url(../images/BgImage.jpg);
+    color: rgb(255, 255, 255);
+    background-size: contain;
+    width: 350px;
+    margin: 10px 20px;
+    text-align: center;
+    height: 256px;
+    flex-direction: column;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}

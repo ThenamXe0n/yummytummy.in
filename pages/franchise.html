@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Yummy Tummy</title>
+<style>
+    #franchise-header{
+        height: 100vh;
+        width: inherit;
+        background-image: url(../images/franchise.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 650px){
+        #franchise-header{
+        background-image: url(../images/franchise-mobi.jpg);
+       
+    }
+    }
+</style>
+
+  </head>
+  <body onload="myFunction()">
+    <div class="loading">
+      <img src="../images/yaaaaa.png" />
+      <div
+        style="
+          position: relative;
+          top: 50%;
+          text-align: center;
+          background-image: url(../images/logo.png);
+          background-size: cover;
+        "
+        class="spinner-border text-primary"
+        role="status"
+      ></div>
+      <div
+        style="
+          position: relative;
+          top: 59%;
+          width: inherit;
+          text-align: center;
+          color: cornflowerblue;
+          font-size: 3rem;
+          font-family: 'Sofia';
+        "
+        class="sr-only"
+      >
+        Loading...
+      </div>
+    </div>
+    <div id="nav-container">
+      <img id="logo" src="../images/yaaaaa.png" alt="logo" />
+      <nav id="nav-bar">
+        <div id="nav-menu" class="closed">
+          <ul>
+            <li>
+              <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li>
+              <a href="../pages/AboutUs.html"
+                ><i class="uil uil-user"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="../pages/franchise.html"><i class="uil uil-shop"></i> Frenchise</a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-capture"></i> Gallary</a>
+            </li>
+            <li>
+              <a href="../pages/contact.html"><i class="uil uil-envelope-alt"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </nav>
+    </div>
+
+    <section id="franchise-page">
+        <div id="franchise-header"></div>
+    </section>
+
+
+
+    <script>
+      let preLoader = document.querySelector(".loading");
+
+      function myFunction() {
+        preLoader.style.display = "none";
+      }
+    </script>
+    <script src="../hamberger.js"></script>
+  </body>
+</html>

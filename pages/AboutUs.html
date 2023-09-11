@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Yummy Tummy</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="loading">
+      <img src="../images/yaaaaa.png" />
+      <div
+        style="
+          position: relative;
+          top: 50%;
+          text-align: center;
+          background-image: url(../images/logo.png);
+          background-size: cover;
+        "
+        class="spinner-border text-primary"
+        role="status"
+      ></div>
+      <div
+        style="
+          position: relative;
+          top: 59%;
+          width: inherit;
+          text-align: center;
+          color: cornflowerblue;
+          font-size: 3rem;
+          font-family: 'Sofia';
+        "
+        class="sr-only"
+      >
+        Loading...
+      </div>
+    </div>
+    <div id="nav-container">
+      <img id="logo" src="../images/yaaaaa.png" alt="logo" />
+      <nav id="nav-bar">
+        <div id="nav-menu" class="closed">
+          <ul>
+            <li>
+              <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li>
+              <a href="../pages/AboutUs.html"
+                ><i class="uil uil-user"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="../pages/franchise.html"><i class="uil uil-shop"></i> Frenchise</a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-capture"></i> Gallary</a>
+            </li>
+            <li>
+              <a href="../pages/contact.html"><i class="uil uil-envelope-alt"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- About-page section -->
+    <section>
+      <div id="container">
+        <div class="headerbg"></div>
+        <h1>About us</h1>
+        <div class="headerbg img2"></div>
+      </div>
+      <div id="about-page-text">
+        <img src="../images/bakery.png" style="width: 350px" alt="" />
+        <p>
+          <span class="Initial-letter">Y</span>
+          UMMY TUMMY BAKERY is growing forward with the ambitious vision to server bakery food
+          globally.Through our years of research we found bakery is a most
+          interesting as well as affordable food which is likable for major
+          partt of population of any age group.But bakery has been identified a
+          public health threat to manny consumers as itts low hyginic quality,
+          But here in yummy tummy bakery we developed unique methodology to
+          prepare bakery snacks in ultra hygienic manner with traditionally
+          yummy taste. <br />
+          YUMMY TUMMY BAKERY tried to bring the exiting range of bakery items
+          under our YUMMY TUMMY BAKERY BRAND .We have kept the most loveable
+          traditional & famous bakery items as it is liked and tried to served
+          in a more hygienic manner for our end customer , just in addition ,
+          our R&D team expert have design and manufactureds the numerous
+          transformations of bakery items, which we are sure will be admire and
+          loved by all age group people.<br />
+          <div class="about-ender-text">"COME AND JOIN HANDS WITH MOST UNIQUE FOOD CONCEPT"</div>
+        </p>
+      </div>
+    </section>
+    <div class="goal-section" >
+      <div id="goal-section-header"><h1>We are not just a bakery.<br> we are your new best friend.</h1></div>
+     
+      <div class="flex-row">
+        <div class="content-box"><img width="70px" src="../images/leadership.png"><h3> PURPOSE</h3> <p>“To foster prosperity & opportunity for all“</p></div>
+      <div class="content-box"><img width="70px" src="../images/target.png"><h3>MISSION</h3><p>“To innovate taste and experiences in food & brevrages that satisfy soul and is affordable and accessible to all ”</p></div>
+      <div class="content-box"> <img width="70px" src="../images/vision.png" alt="" srcset=""> <h3>VISION</h3><p>“To Build Prosperous , satisfied, unemployment -Free World”</p></div>
+    </div>
+     
+      
+    </div>
+    <div class="goal-section1" ></div>
+
+
+
+    <script>
+      let preLoader = document.querySelector(".loading");
+
+      function myFunction() {
+        preLoader.style.display = "none";
+      }
+    </script>
+    <script src="../hamberger.js"></script>
+  </body>
+</html>

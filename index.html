@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Yummy Tummy</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="loading">
+      <img src="images/yaaaaa.png"  />
+      <div
+        style="
+          position: relative;
+          top: 50%;
+          text-align: center;
+          background-image: url(images/logo.png);
+          background-size: cover;
+        "
+        class="spinner-border text-primary"
+        role="status"
+      ></div>
+      <div
+        style="
+          position: relative;
+          top: 59%;
+          width: inherit;
+          text-align: center;
+          color: cornflowerblue;
+          font-size: 3rem;
+          font-family: 'Sofia';
+        "
+        class="sr-only"
+      >
+        Loading...
+      </div>
+    </div>
+    <div id="nav-container">
+      <img id="logo" src="images/yaaaaa.png" alt="logo" />
+      <nav id="nav-bar" class=".closed">
+        <div id="nav-menu" class="closed">
+          <ul>
+            <li>
+              <a href="#"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li>
+              <a href="pages/AboutUs.html"><i class="uil uil-user"></i> About Us</a>
+            </li>
+            <li>
+              <a href="/pages/franchise.html"><i class="uil uil-shop"></i> Frenchise</a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-capture"></i> Gallary</a>
+            </li>
+            <li>
+              <a href="pages\contact.html"><i class="uil uil-envelope-alt"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- landing-page section -->
+
+    <section id="landing-page">
+      <div>
+        <div id="brandInfo">
+          <h1>YUMMY TUMMY BAKERS</h1>
+          <h2>Cake It Easy...</h2>
+        </div>
+      </div>
+    </section>
+    <section id="about-us">
+      <div id="about-container">
+        <div id="about-img"></div>
+        <div id="about-text">
+          <h1>About Us</h1>
+          <p>
+            Welcome to Yummy Tummy Bakers, the bakery that makes your day
+            sweeter! We are a family-owned and operated bakery that specializes
+            in delicious and fresh baked goods. Whether you are looking for a
+            birthday cake, a croissant, a muffin, or a cookie, we have something
+            for everyone. Our products are made with high-quality ingredients
+            and baked with love and care. We also offer vegan, gluten-free, and
+            sugar-free options to suit your dietary needs. At Yummy Tummy
+            Bakers, we believe that baking is an art and a passion. That’s why
+            we always strive to create new and exciting flavors and designs for
+            our customers. We also take pride in our customer service and our
+            friendly and welcoming atmosphere. We want you to feel at home when
+            you visit our bakery
+          </p>
+          <button class="btn"> <a href="pages/contact.html">Get In Touch</a></button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let preLoader = document.querySelector(".loading")
+  
+      function myFunction() {
+        preLoader.style.display = "none"
+      }
+    </script>
+    <script src="hamberger.js"></script>
+  </body>
+</html>
