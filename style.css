@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
 }
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -81,7 +81,6 @@ section {
   padding: 5px;
 }
 
-
 #nav-menu ul li:hover {
   border-bottom: 3px solid black;
   transition: 250ms ease-in-out;
@@ -124,7 +123,7 @@ a {
   font-family: "Caudex";
 }
 
-.Initial-letter{
+.Initial-letter {
   font-size: 4rem;
   color: red;
 }
@@ -179,20 +178,22 @@ a {
   color: white;
   font-size: 1.5rem;
   margin-top: 20px;
+  border-radius: 5rem;
   font-weight: 600;
   background-color: rgb(251, 31, 31);
   padding: 30px auto;
   text-align: center;
+  border: 1px solid black;
   cursor: pointer;
 }
 
 .btn:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(45, 26, 4);
-  transform: translateY(10px);
-  transition: 250ms ease-in-out;
+  background-color: rgb(205, 55, 0);
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 1px black;
+  transition: 520ms linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
 }
-
 
 @media screen and (max-width: 820px) {
   #nav-container nav {
