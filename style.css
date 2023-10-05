@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+.van{
+  width: 70px;
+  animation:move-chevron 6s linear infinite;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -33,7 +38,6 @@ html{
 .flex-row {
   display: flex;
   flex-direction: row;
-  width: inherit;
 }
 .flex-column {
   display: flex;
@@ -153,6 +157,7 @@ a {
   font-family: "Sofia";
   color: black;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 #about-container {
@@ -368,10 +373,31 @@ backdrop-filter: blur(8px);
     text-align: center;
   }
   #landing-page div {
-    align-items: center;
+    align-items: normal;
   }
 
   .closed {
     transform: translateX(720px);
   }
+
+
+
+}
+
+@keyframes move-chevron {
+  25% {
+      opacity: 1;
+ }
+  33.3% {
+      opacity: 1;
+      transform: translateX(4.28rem);
+ }
+  66.6% {
+      opacity: 1;
+      transform: translateX(12.12rem);
+ }
+  100% {
+      opacity: 0;
+      transform: translateX(17.8rem) ;
+ }
 }
