@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Montserrat:wght@400;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,9 +9,6 @@ html{
   scroll-behavior: smooth;
 }
 
-footer{
-  display: none;
-}
 
 .text-center{
   text-align: center;
@@ -43,7 +40,7 @@ footer{
 }
 
 .loading {
-  background: white;
+  background: linear-gradient(260deg,#B5398F,#8A1566);
   height: 100vh;
   position: fixed;
   display: flex;
@@ -54,7 +51,7 @@ footer{
 .loading img {
   width: 30rem;
   position: absolute;
-  top: 275px;
+  top: 350px;
 }
 
 section {
@@ -259,16 +256,6 @@ a {
     );
 }
 
-footer{
-  height: max-content;
-  width: inherit;
-  color: white;
-  font-family: 'Andika';
-  background-image: url(images/footer.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-top: 10px;
-}
 
 #footer-details{
   font-family: 'Philosopher';
@@ -291,6 +278,9 @@ backdrop-filter: blur(8px);
 .footer-links:hover{
   transform: translateX(10px);
   transition: 250ms ease;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: bisque;
 }
 
 /* icons design */
@@ -311,7 +301,7 @@ backdrop-filter: blur(8px);
     height: 100%;
     right: 0;
     width: 80%;
-    transition: 750ms ease-in;
+    transition: 250ms ease-in;
     justify-content: center;
     align-items: center;
   }
@@ -346,7 +336,7 @@ backdrop-filter: blur(8px);
     background-color: rgb(0, 0, 0);
     display: block;
     border-radius: 5px;
-    transition: 1s ease;
+    transition: 250ms ease;
   }
   #about-container {
     width: auto;

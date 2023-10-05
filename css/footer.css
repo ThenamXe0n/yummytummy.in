@@ -1,0 +1,114 @@
+#footer-section {
+  flex-direction: column;
+    display: flex;
+    color: white;
+    background: linear-gradient(260deg, #8A1566, #B5398F);
+    height: fit-content;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 50px 20px;
+    line-height: 2;
+}
+#footer-info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+#footer-logo {
+  width: 20vw;
+}
+
+.footer-logo-div {
+  justify-content: end;
+  display: flex;
+  margin-right: 5%;
+}
+
+.footer-navigtion {
+  display: flex;
+  flex-direction: column;
+}
+.footer-navigation ul {
+  list-style-type: none;
+}
+.footer-headings {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Sofia";
+  font-weight: 600;
+  color: white;
+}
+.footer-links {
+  font-size: 1rem;
+  font-family: inherit;
+  font-family: "Montserrat";
+  color: white;
+}
+.footer-contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-icons {
+  font-size: 2rem;
+}
+.footer-legal {
+  margin-top: 20px;
+}
+.footer-legal h3 {
+  font-size: 1rem;
+  background: #0000004f;
+  font-family: "forum";
+  text-align: center;
+  font-weight: 400;
+  width: inherit;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 32px;
+}
+
+.footer-subscribe{
+  line-height: 2;
+}
+.footer-input {
+  padding: 2px 5px;
+  height: 3rem;
+  width: 50%;
+  font-size: 1rem;
+  outline: none;
+}
+.footer-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 4px 33px;
+  cursor: pointer;
+  height: 3rem;
+}
+.footer-btn:hover{
+  background-color: aliceblue;
+  color: black;
+  transition: 500ms ease;
+}
+/* responsive layout */
+
+@media screen and (max-width: 850px) {
+  #footer-info-section {
+    display: flex;
+    line-height: 3;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 30px;
+    justify-content: space-around;
+  }
+  .footer-logo-div {
+    margin-left: 5%;
+    justify-content: flex-start;
+  }
+  #footer-logo {
+    width: 45vw;
+  }
+}

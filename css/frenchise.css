@@ -1,5 +1,5 @@
 #franchise-model{
-    height: 100vh;
+    height: fit-content;
 }
 
 #franchise-header {
@@ -97,7 +97,7 @@
         height: 400px;
         background-image: url(../images/franchiseShop.png);
         background-size: contain;
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
       }
       #question-div{
         flex-direction: column;
