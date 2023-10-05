@@ -33,6 +33,7 @@ html{
 .flex-row {
   display: flex;
   flex-direction: row;
+  width: inherit;
 }
 .flex-column {
   display: flex;
