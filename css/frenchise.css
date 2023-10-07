@@ -1,105 +1,187 @@
-#franchise-model{
-    height: fit-content;
+#franchise-model {
+  height: fit-content;
+}
+.text-m{
+  font-size: 2rem;
+}
+.text-l{
+  font-size: 2.5rem;
+}
+#franchise-header {
+  height: 100vh;
+  width: inherit;
+  background-image: url(../images/franchise.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
-#franchise-header {
-    height: 100vh;
-    width: inherit;
-    background-image: url(../images/franchise.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+.shape-cake {
+  background: url(https://www.thecake.in/image/cache/catalog/cake/s-alphabet-shaped-cakes-from-thecake-1000x1000.jpg);
+  background-size: contain;
+}
+.photo-cake {
+  background: url(https://www.shopnideas.com/blog/wp-content/uploads/2022/05/rich-chocolate-photo-cake-2kg_1.jpg);
+  background-size: contain;
+}
+.delux-cake {
+  background: url(https://spongedrop.co.nz/cdn/shop/products/ChocolateDeluxeCake_800x.jpg?v=1604286593);
+  background-size: contain;
+}
+.cupcakes{
+  background: url(https://theobroma.in/cdn/shop/products/AssortedCupcakes1-green-dot.jpg?v=1669904125);
+  background-size: contain;
+}
+.doughnuts{
+  background: url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5B78D693-7A5B-4436-93D0-438121ACED48/Derivates/2FC98C52-7814-43C2-B09D-A489A3AECB54.jpg);
+  background-size: contain;
+}
+.cookies{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTV2J9eWQzGOaKaBnXrnWpfgtLeVXQTMcJA&usqp=CAU);
+  background-size: contain;
+}
+.puddings{
+  background: url(https://foodhub.scene7.com/is/image/woolworthsltdprod/1712-chocolate-and-cherry-christmas-puddings:Mobile-1300x1150);
+  background-size: contain;
+}
+.chocolates{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1f5PaePRnYgvElOs64a6WgkyHaaHOlAc2ag&usqp=CAU);
+  background-size: contain;
+}
+.cake-jar{
+  background: url(https://assets.giftalove.com/resources/common/giftimages/productimage2/oreo-flavored-jar-cake.jpg);
+  background-size: contain;
+}
+
+#franchise-div {
+  background-image: url(../images/aboutbg.svg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-family: "Philosopher";
+}
+
+#franchise-div h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 65px;
+}
+
+#franchise-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 2;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+#franchise-details h2 {
+  background-color: rgba(255, 0, 0, 0.861);
+  color: white;
+  border-radius: 5px;
+  font-family: "Philosopher";
+  text-align: center;
+  padding: 10px;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 5rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#franchise-details ul li {
+  font-size: 1rem;
+  font-family: "Kanit";
+  margin-left: 20px;
+  list-style-type: disclosure-closed;
+}
+
+.uil-angle-down {
+  font-size: 4rem;
+}
+
+#imgshop {
+  height: 400px;
+  width: 100%;
+  background-image: url(..//images/franchiseShopp.png);
+  background-size: cover;
+}
+#question-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 6px solid violet;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 40px 0px;
+}
+.franchise-icons {
+  width: 128px;
+  height: auto;
+  margin: auto;
+}
+#menu-item {
+  width: 100vw;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+.item-heading{
+  width: -webkit-fill-available;
+  text-align: center;
+  background: darkmagenta;
+  color: white;
+}
+#item-types {
+  width: inherit;
+  justify-content: space-around;
+}
+.circle:hover{
+  scale: 1.5;
+  transition: 750ms ease-in-out;
+}
+
+
+@media screen and (max-width: 650px) {
+  #franchise-header {
+    background-image: url(../images/franchise-mobi.jpg);
   }
 
   #franchise-div {
-    background-image: url(../images/aboutbg.svg);
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    font-family: "Philosopher";
+    padding: 0;
+    gap: 35px;
   }
-
   #franchise-div h1 {
-    text-align: center;
-    width: 100%;
-    font-size: 65px;
+    font-size: 3rem;
   }
-
-  #franchise-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    line-height: 2;
+  #franchise-details h2 {
     font-size: 1.5rem;
-    padding: 20px;
   }
-
-  #franchise-details h2  {
-    background-color: rgba(255, 0, 0, 0.861);
-    color: white;
-    border-radius: 5px;
-    font-family: 'Philosopher';
-    text-align: center;
-    padding: 10px;
-  }
-
-
-  #franchise-details ul li {
-    font-size: 1rem;
-    font-family: 'Kanit';
-    margin-left: 20px;
-    list-style-type: disclosure-closed;
-    
-  }
-
-  .uil-angle-down{
-    font-size: 4rem;
-  }
-
-  #imgshop{
+  #imgshop {
     height: 400px;
-    width: 100%;
-    background-image: url(..//images/franchiseShopp.png);
-    background-size: cover;
+    background-image: url(../images/franchiseShop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-  #question-div{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+  #question-div {
+    flex-direction: column;
   }
-  .franchise-icons{
-    width: 128px;
-    height: auto;
-    margin: auto;
+  .circle {
+    width: 90px;
+    height: 90px;
   }
-
-  @media screen and (max-width: 650px) {
-    #franchise-header {
-      background-image: url(../images/franchise-mobi.jpg);
-    }
-
-    #franchise-div{
-        padding: 0;
-        gap: 35px;
-    }
-    #franchise-div h1{
-        font-size: 3rem;
-    }
-    #franchise-details h2{
-        font-size: 1.5rem;
-    }
-    #imgshop{
-        height: 400px;
-        background-image: url(../images/franchiseShop.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      #question-div{
-        flex-direction: column;
-      }
+  .text-m{
+    font-size: 1rem;
   }
+  .text-l{
+    font-size: 1.8rem;
+  }
+}

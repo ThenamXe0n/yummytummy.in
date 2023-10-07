@@ -15,6 +15,9 @@
   font-weight: 900;
   text-transform:uppercase;
 }
+#about-section{
+  padding-top: 90px;
+}
 .headerbg {
   height: 120px;
   width: 353.4px;

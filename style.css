@@ -1,27 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Montserrat:wght@400;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Forum&family=Kanit:wght@500;600&family=Montserrat:wght@400;600&family=Philosopher:wght@700&family=Roboto:wght@100&family=Sofia&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-.van{
-  width: 130px;
-  animation:move-chevron 6s linear infinite;
+.auto{
+  margin: auto;
+}
+.bold{
+  font-weight: 800;
+}
+.font-lg{
+  font-size: 1.6rem;
+}
+.w-max{
+  width: max-content;
 }
 
-html{
+.van {
+  width: 170px;
+  animation: move-chevron 6s linear infinite;
+  margin-left: 22rem;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
-
-.text-center{
+.text-center {
   text-align: center;
 }
-.mt-1{
+.mt-1 {
   margin-top: 15px;
 }
-.gap-1{
+.gap-1 {
   gap: 15px;
 }
 .flex {
@@ -30,7 +42,7 @@ html{
   align-items: center;
 }
 
-.strong-text{
+.strong-text {
   font-size: 2rem;
   text-align: center;
 }
@@ -45,7 +57,7 @@ html{
 }
 
 .loading {
-  background: linear-gradient(260deg,#B5398F,#8A1566);
+  background: linear-gradient(260deg, #b5398f, #8a1566);
   height: 100vh;
   position: fixed;
   display: flex;
@@ -63,16 +75,17 @@ section {
   height: 100vh;
   width: 100vw;
   background-size: contain;
-  padding-top: 67px;
+  padding-top: 40px;
   height: fit-content;
 }
 
 #nav-container {
-  background-color: white;
+  background-color: #a024df;
   display: flex;
   position: fixed;
   justify-content: space-between;
   width: 100%;
+  color: white;
   z-index: 9999;
 }
 
@@ -112,7 +125,7 @@ section {
   border-radius: 10px;
   padding: 0px 16px;
   font-weight: 800;
-  color: red;
+  color: #fffcfe;
   font-size: 1.4rem;
 }
 
@@ -126,20 +139,24 @@ a {
 }
 
 #landing-page {
-  background: url(images/BgImage.jpg);
   height: 100vh;
   background-size: cover;
   display: flex;
+  background-image: url(./images/landingpagedesktop.jpg);
   justify-content: space-evenly;
 }
 #landing-page div {
   display: flex;
+  backdrop-filter: blur(2px);
+  width: inherit;
+  background: #8a2be263;
 }
 
 #brandInfo {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 #brandInfo h1 {
@@ -261,26 +278,25 @@ a {
     );
 }
 
-
-#footer-details{
-  font-family: 'Philosopher';
+#footer-details {
+  font-family: "Philosopher";
 }
 
-#footer-div{
-padding: 10px 40px;
-line-height: 2;
-justify-content: space-between;
-background-color: rgba(0, 0, 0, 0.441);
-backdrop-filter: blur(8px);
+#footer-div {
+  padding: 10px 40px;
+  line-height: 2;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.441);
+  backdrop-filter: blur(8px);
 }
 
-#footer-div h4{
+#footer-div h4 {
   font-size: 1.5rem;
 }
-#footer-contact-details{
+#footer-contact-details {
   width: 20%;
 }
-.footer-links:hover{
+.footer-links:hover {
   transform: translateX(10px);
   transition: 250ms ease;
   font-size: 1.2rem;
@@ -289,7 +305,7 @@ backdrop-filter: blur(8px);
 }
 
 /* icons design */
-.uil-whatsapp-alt{
+.uil-whatsapp-alt {
   font-size: 3rem;
   color: green;
 }
@@ -301,9 +317,10 @@ backdrop-filter: blur(8px);
   }
   #nav-menu {
     display: flex;
-    background: aliceblue;
+    background: #5d0385d4;
     position: fixed;
     height: 100%;
+    backdrop-filter: blur(6px);
     right: 0;
     width: 80%;
     transition: 250ms ease-in;
@@ -338,7 +355,7 @@ backdrop-filter: blur(8px);
   .bar {
     height: 3px;
     width: 1.5rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     display: block;
     border-radius: 5px;
     transition: 250ms ease;
@@ -374,30 +391,39 @@ backdrop-filter: blur(8px);
   }
   #landing-page div {
     align-items: normal;
+    background: none;
+  }
+  #landing-page {
+    background: url(images/BgImage.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .van{
+    margin-left: 0px;
+    width: 130px;
   }
 
   .closed {
     transform: translateX(720px);
   }
-
-
-
 }
 
 @keyframes move-chevron {
   25% {
-      opacity: 1;
- }
+    opacity: 1;
+  }
   33.3% {
-      opacity: 1;
-      transform: translateX(4.28rem);
- }
+    opacity: 1;
+    transform: translateX(10rem);
+  }
   66.6% {
-      opacity: 1;
-      transform: translateX(12.12rem);
- }
+    opacity: 1;
+    transform: translateX(18.12rem);
+  }
   100% {
-      opacity: 0;
-      transform: translateX(17.8rem) ;
- }
+    opacity: 0;
+    transform: translateX(25.8rem);
+  }
 }
