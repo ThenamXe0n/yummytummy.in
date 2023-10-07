@@ -1,10 +1,10 @@
 #franchise-model {
   height: fit-content;
 }
-.text-m{
+.text-m {
   font-size: 2rem;
 }
-.text-l{
+.text-l {
   font-size: 2.5rem;
 }
 #franchise-header {
@@ -18,6 +18,49 @@
   justify-content: center;
 }
 
+.pastries {
+  background: url(https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+}
+.coffee {
+  background: url(https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-500x375.png);
+  background-size: cover;
+}
+.coolers {
+  background: url(https://static.toiimg.com/photo/70994944.cms);
+  background-size: cover;
+}
+.milkshakes {
+  background: url(https://evakoper.com/wp-content/uploads/2021/08/Protein-Milkshakes-scaled.jpg);
+  background-size: cover;
+}
+
+.lava-cake {
+  background: url(https://www.simplydifferent.in/cdn/shop/products/17_740x.png?v=1597401066);
+  background-size: cover;
+}
+.pasta {
+  background: url(https://static.toiimg.com/thumb/84784534.cms?imgsize=468021&width=800&height=800);
+  background-size: cover;
+}
+
+.brownies {
+  background: url(https://bakefromscratch.com/wp-content/uploads/2021/02/Brownies_WD0144social-e1653598451828-768x614.jpg);
+  background-size: cover;
+}
+.puffs {
+  background: url(https://cakebee.in/cdn/shop/products/ChickenPuffs_600x.jpg?v=1678434495);
+  background-size: cover;
+}
+.sandwiches {
+  background: url(https://img.taste.com.au/kjEsak6-/taste/2016/11/blat-club-sandwiches-86856-1.jpeg);
+  background-size: cover;
+}
+
+.rolls {
+  background: url(https://southindianfoods.in/recipe_picture_enlarge/veg-kathi-roll.jpg);
+  background-size: cover;
+}
 .shape-cake {
   background: url(https://www.thecake.in/image/cache/catalog/cake/s-alphabet-shaped-cakes-from-thecake-1000x1000.jpg);
   background-size: contain;
@@ -30,27 +73,27 @@
   background: url(https://spongedrop.co.nz/cdn/shop/products/ChocolateDeluxeCake_800x.jpg?v=1604286593);
   background-size: contain;
 }
-.cupcakes{
+.cupcakes {
   background: url(https://theobroma.in/cdn/shop/products/AssortedCupcakes1-green-dot.jpg?v=1669904125);
   background-size: contain;
 }
-.doughnuts{
+.doughnuts {
   background: url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5B78D693-7A5B-4436-93D0-438121ACED48/Derivates/2FC98C52-7814-43C2-B09D-A489A3AECB54.jpg);
   background-size: contain;
 }
-.cookies{
+.cookies {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTV2J9eWQzGOaKaBnXrnWpfgtLeVXQTMcJA&usqp=CAU);
   background-size: contain;
 }
-.puddings{
+.puddings {
   background: url(https://foodhub.scene7.com/is/image/woolworthsltdprod/1712-chocolate-and-cherry-christmas-puddings:Mobile-1300x1150);
   background-size: contain;
 }
-.chocolates{
+.chocolates {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1f5PaePRnYgvElOs64a6WgkyHaaHOlAc2ag&usqp=CAU);
   background-size: contain;
 }
-.cake-jar{
+.cake-jar {
   background: url(https://assets.giftalove.com/resources/common/giftimages/productimage2/oreo-flavored-jar-cake.jpg);
   background-size: contain;
 }
@@ -76,8 +119,8 @@
   flex-direction: column;
   gap: 10px;
   line-height: 2;
-  font-size: 1.5rem;
   padding: 20px;
+  font-size: 1.5rem;
 }
 
 #franchise-details h2 {
@@ -134,7 +177,7 @@
   gap: 40px;
   margin-bottom: 15px;
 }
-.item-heading{
+.item-heading {
   width: -webkit-fill-available;
   text-align: center;
   background: darkmagenta;
@@ -144,11 +187,22 @@
   width: inherit;
   justify-content: space-around;
 }
-.circle:hover{
+.circle:hover {
   scale: 1.5;
   transition: 750ms ease-in-out;
 }
 
+#product-section {
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/productbg.jpg);
+  padding-top: 20px;
+}
+#products-div {
+  backdrop-filter: blur(7px);
+  font-family: "sofia";
+  padding: 10px 0px;
+}
 
 @media screen and (max-width: 650px) {
   #franchise-header {
@@ -178,10 +232,10 @@
     width: 90px;
     height: 90px;
   }
-  .text-m{
+  .text-m {
     font-size: 1rem;
   }
-  .text-l{
+  .text-l {
     font-size: 1.8rem;
   }
 }
