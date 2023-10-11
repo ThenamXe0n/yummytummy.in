@@ -323,6 +323,7 @@ a {
 #whatsapp-Contact:hover{
   background-color: white;
   color: #0e8713;
+  opacity: 0.8;
   box-shadow: 0px 6px 3px black ;
   transition: 720ms
     linear(
