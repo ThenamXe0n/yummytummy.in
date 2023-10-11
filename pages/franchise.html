@@ -43,27 +43,29 @@
       ></div>
     </div>
     <div id="nav-container">
-     <a href="../index.html" ><img id="logo" src="../images/logo.png" alt="logo" /></a>
+      <a href="../index.html"
+        ><img id="logo" class="animate-fadedownhide effect-item" src="../images/logo.png" alt="logo"
+      /></a>
       <nav id="nav-bar">
         <div id="nav-menu" class="closed">
           <ul>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-1">
               <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-2">
               <a href="../pages/AboutUs.html"
                 ><i class="uil uil-user"></i> About Us</a
               >
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-3">
               <a href="../pages/franchise.html"
                 ><i class="uil uil-shop"></i> Franchise</a
               >
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-4">
               <a href="#"><i class="uil uil-capture"></i> Gallery</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-5">
               <a href="../pages/contact.html"
                 ><i class="uil uil-envelope-alt"></i> Contact Us</a
               >
@@ -336,13 +338,23 @@
         </div>
       </div>
     </footer>
-    <div id="whatsapp-Contact" ><i class="uil uil-whatsapp" style="font-size: 2.5rem;text-align: center;"></i></div>
+    <div id="whatsapp-Contact">
+      <i
+        class="uil uil-whatsapp"
+        style="font-size: 2.5rem; text-align: center"
+      ></i>
+    </div>
 
     <script>
       let preLoader = document.querySelector(".loading");
+      const navItems = document.querySelectorAll(".effect-item");
 
       function myFunction() {
         preLoader.style.display = "none";
+        navItems.forEach((item) => {
+          item.classList.remove("animate-fadedownhide");
+          return;
+        });
       }
     </script>
     <script src="../hamberger.js"></script>

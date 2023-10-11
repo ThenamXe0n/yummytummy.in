@@ -18,7 +18,7 @@
 }
 #footer-logo {
   width: 20vw;
-  filter: drop-shadow(3px 3px 2px black);
+  filter: drop-shadow(0.4px 0.6px 1px white );
 }
 
 .footer-logo-div {

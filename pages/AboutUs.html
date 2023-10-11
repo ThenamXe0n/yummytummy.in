@@ -43,25 +43,25 @@
       </div>
     </div>
     <div id="nav-container">
-      <a href="../index.html"><img id="logo" src="../images/logo.png" alt="logo" /></a>
+      <a href="../index.html"><img id="logo" class="animate-fadedownhide effect-item" src="../images/logo.png" alt="logo" /></a>
       <nav id="nav-bar">
         <div id="nav-menu" class="closed">
           <ul>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-1 ">
               <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-2 ">
               <a href="../pages/AboutUs.html"
                 ><i class="uil uil-user"></i> About Us</a
               >
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-3 ">
               <a href="../pages/franchise.html"><i class="uil uil-shop"></i> Franchise</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-4 ">
               <a href="#"><i class="uil uil-capture"></i> Gallery</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-5 ">
               <a href="../pages/contact.html"><i class="uil uil-envelope-alt"></i> Contact Us</a>
             </li>
           </ul>
@@ -76,13 +76,13 @@
 
     <!-- About-page section -->
     <section id="about-section">
-      <div id="container">
+      <div id="container" class="animate-fadescale">
         <div class="headerbg"></div>
         <h1>About us</h1>
         <div class="headerbg img2"></div>
       </div>
       <div id="about-page-text">
-        <img src="../images/bakery.png" style="width: inherit" alt="bakery Image" />
+        <img id="aboutImage" class="animate-fadehideright" src="../images/bakery.png" style="width: inherit" alt="bakery Image" />
         <p>
           <span class="Initial-letter">Y</span>
           UMMY TUMMY BAKERY is growing forward with the ambitious vision to server bakery food
@@ -104,7 +104,7 @@
         </p>
       </div>
     </section>
-    <div class="goal-section" >
+    <section><div class="goal-section" >
       <div id="goal-section-header"><h1>We are not just a bakery.<br> we are your new best friend.</h1></div>
      
       <div class="flex-row">
@@ -115,6 +115,7 @@
      
       
     </div>
+  </section>
 
     <footer id="footer-section">
       <div class="footer-logo-div"><img src="../images/logo.png" id="footer-logo" alt="logo" /></div>
@@ -155,9 +156,18 @@
 
     <script>
       let preLoader = document.querySelector(".loading");
+      const navItems = document.querySelectorAll(".effect-item");
+      const aboutContainer = document.querySelector("#container")
+      const aboutImage = document.querySelector("#aboutImage")
 
       function myFunction() {
         preLoader.style.display = "none";
+        aboutContainer.classList.remove("animate-fadescale");
+        aboutImage.classList.remove("animate-fadehideright");
+        navItems.forEach((item) => {
+        item.classList.remove("animate-fadedownhide");
+         return;
+    });
       }
     </script>
     <script src="../hamberger.js"></script>

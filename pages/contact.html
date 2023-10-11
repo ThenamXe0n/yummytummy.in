@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nameet Mandwal">
+    <meta name="author" content="Nameet Mandwal" />
     <link rel="icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -39,29 +39,36 @@
           font-family: 'Sofia';
         "
         class="sr-only"
-      >
-      </div>
+      ></div>
     </div>
     <div id="nav-container">
-      <a href="../index.html"><img id="logo" src="../images/logo.png" alt="logo" /></a>
+      <a href="../index.html"
+        ><img
+          class="animate-fadedownhide effect-item"
+          id="logo"
+          src="../images/logo.png"
+          alt="logo"
+      /></a>
       <nav id="nav-bar">
         <div id="nav-menu" class="closed">
           <ul>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-1">
               <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-2">
               <a href="../pages/AboutUs.html"
                 ><i class="uil uil-user"></i> About Us</a
               >
             </li>
-            <li>
-              <a href="../pages/franchise.html"><i class="uil uil-shop"></i> Franchise</a>
+            <li class="animate-fadedownhide effect-item navitem-3">
+              <a href="../pages/franchise.html"
+                ><i class="uil uil-shop"></i> Franchise</a
+              >
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-4">
               <a href="#"><i class="uil uil-capture"></i> Gallery</a>
             </li>
-            <li>
+            <li class="animate-fadedownhide effect-item navitem-5">
               <a href="#"><i class="uil uil-envelope-alt"></i> Contact Us</a>
             </li>
           </ul>
@@ -77,10 +84,7 @@
     <!-- landing-page section -->
     <section>
       <div class="form-container">
-        <div
-        style="text-align: center;"
-         class="form-heading-layout"
-        >
+        <div style="text-align: center" class="form-heading-layout">
           <h2>Get In Touch!</h2>
           <p>
             Fill the form with your query and we'll contact you as soon as
@@ -137,7 +141,7 @@
                   name="message"
                   id="message"
                   rows="4"
-                  style="height: 6rem;"
+                  style="height: 6rem"
                   class="input-boxes"
                 ></textarea>
               </div>
@@ -157,26 +161,41 @@
       </div>
     </section>
     <footer id="footer-section">
-      <div class="footer-logo-div"><img src="../images/logo.png" id="footer-logo" alt="logo" /></div>
+      <div class="footer-logo-div">
+        <img src="../images/logo.png" id="footer-logo" alt="logo" />
+      </div>
       <div class="footer-legal">
-        <h3 class="copyright"> © yummy tummy bakers 2023  </h3>
+        <h3 class="copyright">© yummy tummy bakers 2023</h3>
       </div>
       <div id="footer-info-section">
         <div class="footer-navigation">
           <h1 class="footer-headings">navigation links</h1>
           <ul>
             <li class="footer-links"><a href="../index.html"> » HOME</a></li>
-            <li class="footer-links"><a href="./AboutUs.html"> » ABOUT US</a></li>
-            <li class="footer-links"><a href="./franchise.html"> » FRANCHISE</a></li>
+            <li class="footer-links">
+              <a href="./AboutUs.html"> » ABOUT US</a>
+            </li>
+            <li class="footer-links">
+              <a href="./franchise.html"> » FRANCHISE</a>
+            </li>
             <li class="footer-links"><a href="#"> » GALLERY</a></li>
-            <li class="footer-links"><a href="./contact.html"> » CONTACT US</a></li>
+            <li class="footer-links">
+              <a href="./contact.html"> » CONTACT US</a>
+            </li>
           </ul>
         </div>
         <div class="footer-contact">
           <h1 class="footer-headings">contact details</h1>
-          <p class="footer-links"><i class="uil uil-globe"></i> <strong>Address : </strong> xyz near a street , city ,INDIA</p>
-          <p class="footer-links"><i class="uil uil-envelope"></i> EMAIL : yummytummybakers@gmail.com</p>
-          <p style="text-align: center;" class="footer-headings">connet with us on :</p>
+          <p class="footer-links">
+            <i class="uil uil-globe"></i> <strong>Address : </strong> xyz near a
+            street , city ,INDIA
+          </p>
+          <p class="footer-links">
+            <i class="uil uil-envelope"></i> EMAIL : yummytummybakers@gmail.com
+          </p>
+          <p style="text-align: center" class="footer-headings">
+            connet with us on :
+          </p>
           <div class="footer-contact-details">
             <div class="footer-icons footer-links">
               <i class="uil uil-instagram"></i>
@@ -191,13 +210,23 @@
         </div>
       </div>
     </footer>
-    <div id="whatsapp-Contact" ><i class="uil uil-whatsapp" style="font-size: 2.5rem;text-align: center;"></i></div>
+    <div id="whatsapp-Contact">
+      <i
+        class="uil uil-whatsapp"
+        style="font-size: 2.5rem; text-align: center"
+      ></i>
+    </div>
 
     <script>
       let preLoader = document.querySelector(".loading");
+      const navItems = document.querySelectorAll(".effect-item");
 
       function myFunction() {
         preLoader.style.display = "none";
+        navItems.forEach((item) => {
+          item.classList.remove("animate-fadedownhide");
+          return;
+        });
       }
     </script>
     <script src="../hamberger.js"></script>

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 1s ease-in;
 }
 #container h1 {
   font-size: 72px;
@@ -106,6 +107,10 @@
   transition: 750ms ease;
   background:#ff4b66 ;
   color: black;
+}
+
+#aboutImage{
+  transition: 1.5s ease-in
 }
 
 /* for mobile layout */
