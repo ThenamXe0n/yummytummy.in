@@ -1,8 +1,6 @@
 .container {
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 200px;
 }
 .chevron {
     position: absolute;

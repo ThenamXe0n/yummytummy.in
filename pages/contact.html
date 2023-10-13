@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nameet Mandwal" />
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="../css/footer.css" />
@@ -91,14 +91,14 @@
             possible
           </p>
         </div>
-        <form action="" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form id="contact-form" class="mx-auto mt-16 max-w-xl sm:mt-20">
           <div class="sm:col-span-2">
             <label for="company">Full Name</label>
             <div class="m-2">
               <input
                 type="text"
-                name="company"
-                id="company"
+                name="Name"
+                id="Name"
                 autocomplete="organization"
                 required
                 class="input-boxes"
@@ -121,10 +121,9 @@
               <div class="m-2">
                 <input
                   type="email"
-                  name="email"
+                  name="Email"
                   required
-                  id="email"
-                  autocomplete="email"
+                  id="Email"
                   class="input-boxes"
                 />
               </div>
@@ -139,7 +138,7 @@
               <div class="m-2">
                 <textarea
                   name="message"
-                  id="message"
+                  id="Message"
                   rows="4"
                   style="height: 6rem"
                   class="input-boxes"
@@ -148,13 +147,8 @@
             </div>
           </div>
           <div class="mt-10">
-            <button type="submit" class="submit-btn">
-              <a
-                style="display: flex; justify-content: center; width: inherit"
-                href="/pages/submitted.html"
-              >
-                Submit</a
-              >
+            <button type="button"  class="submit-btn">
+              Submit
             </button>
           </div>
         </form>
@@ -230,5 +224,26 @@
       }
     </script>
     <script src="../hamberger.js"></script>
+    
+    <script>
+      function sendMail() {
+        let Name = document.getElementById("Name").value;
+        let Contact = document.getElementById("Contact").value;
+        let email = document.getElementById("Email").value;
+        let Message = document.getElementById("Message").value;
+        const form = document.getElementById("contact-form");
+        let body = `This is a query from ${Name} regarding yummytummy bakery <br> Email : ${email} <br> Contact : ${Contact} <br> Message : ${Message}`;
+        Email.send({
+          SecureToken: "3975bdc3-5438-4fb2-aaa8-d92e533174a3",
+          To: "yummytummybakers.india@gmail.com",
+          From: "support@yummytummybakers.in",
+          Subject: "This is the subject",
+          Body: body,
+        }).then(() => {
+          alert(`thank You ${Name} . Your query has been send to Yummytummy Bakers`);
+          form.reset()
+        });
+      }
+    </script>
   </body>
 </html>

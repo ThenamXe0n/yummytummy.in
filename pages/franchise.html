@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nameet Mandwal" />
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/mouseScroll.css" />
     <link rel="stylesheet" href="../css/frenchise.css" />
@@ -44,7 +44,11 @@
     </div>
     <div id="nav-container">
       <a href="../index.html"
-        ><img id="logo" class="animate-fadedownhide effect-item" src="../images/logo.png" alt="logo"
+        ><img
+          id="logo"
+          class="animate-fadedownhide effect-item"
+          src="../images/logo.png"
+          alt="logo"
       /></a>
       <nav id="nav-bar">
         <div id="nav-menu" class="closed">
@@ -82,13 +86,39 @@
 
     <section id="franchise-page">
       <div id="franchise-header">
-        <a href="#franchise-model">
-          <div class="container">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
+        <div
+          style="
+            margin-top: 3.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <h1 class="font-label animate-fadedownhide effect-item">Franchise</h1>
+          <img
+            src="../images/franchisetree.png"
+            id="franTree"
+            class="animate-fadescale"
+            alt=""
+            srcset=""
+          />
+          <div
+            id="frantagline-div"
+            style="display: flex; justify-content: space-between"
+          >
+            <p id="tag-left" class="animate-fadehide franpara">YUMMY</p>
+            <p id="tag-right" class="animate-fadehideright franpara">TUMMY</p>
           </div>
-        </a>
+          <p id="fransubpara">CAKE IT EASY</p>
+          <img id="franflexer" src="../images/franflexer.png" alt="flexer" >
+          <a href="#franchise-model">
+            <div class="container">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -348,6 +378,9 @@
     <script>
       let preLoader = document.querySelector(".loading");
       const navItems = document.querySelectorAll(".effect-item");
+      const franImg = document.getElementById("franTree");
+      const pRight = document.getElementById("tag-right");
+      const pLeft = document.getElementById("tag-left");
 
       function myFunction() {
         preLoader.style.display = "none";
@@ -355,6 +388,11 @@
           item.classList.remove("animate-fadedownhide");
           return;
         });
+        franImg.classList.remove("animate-fadescale");
+        pLeft.classList.remove("animate-fadehide");
+        pRight.classList.remove("animate-fadehideright");
+
+        effectItems();
       }
     </script>
     <script src="../hamberger.js"></script>
