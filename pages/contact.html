@@ -148,9 +148,7 @@
             </div>
           </div>
           <div class="mt-10">
-            <button type="button"  class="submit-btn">
-              Submit
-            </button>
+            <button type="button" class="submit-btn">Submit</button>
           </div>
         </form>
       </div>
@@ -193,7 +191,10 @@
           </p>
           <div class="footer-contact-details">
             <div class="footer-icons footer-links">
-              <i class="uil uil-instagram"></i>
+              <a
+                href="https://www.instagram.com/sarvagya_foods.in/?utm_source=ig_web_button_share_sheet&igshid=ODE2OTA4Y2Y1MQ=="
+                ><i class="uil uil-instagram"></i
+              ></a>
             </div>
             <div class="footer-icons footer-links">
               <i class="uil uil-whatsapp"></i>
@@ -225,7 +226,7 @@
       }
     </script>
     <script src="../hamberger.js"></script>
-    
+
     <script>
       function sendMail() {
         let Name = document.getElementById("Name").value;
@@ -241,8 +242,10 @@
           Subject: "This is the subject",
           Body: body,
         }).then(() => {
-          alert(`thank You ${Name} . Your query has been send to Yummytummy Bakers`);
-          form.reset()
+          alert(
+            `thank You ${Name} . Your query has been send to Yummytummy Bakers`
+          );
+          form.reset();
         });
       }
     </script>
