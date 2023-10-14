@@ -66,8 +66,9 @@
   background-position: right;
 }
 .pasta{
-  background: url(https://www.ecuisine.ro/wp-content/uploads/2016/09/spaghette-clasice-1200x742.jpg);
+  background: url(../images/pasta.jpg);
   background-size: cover;
+  background-position: bottom;
 }
 .pastries {
   background: url(https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
