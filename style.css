@@ -7,6 +7,8 @@
 .auto {
   margin: auto;
 }
+
+
 .bold {
   font-weight: 800;
 }
@@ -280,31 +282,6 @@ a {
     );
 }
 
-#footer-details {
-  font-family: "Philosopher";
-}
-
-#footer-div {
-  padding: 10px 40px;
-  line-height: 2;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.441);
-  backdrop-filter: blur(8px);
-}
-
-#footer-div h4 {
-  font-size: 1.5rem;
-}
-#footer-contact-details {
-  width: 20%;
-}
-.footer-links:hover {
-  transform: translateX(10px);
-  transition: 250ms ease;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: bisque;
-}
 
 #whatsapp-Contact {
   height: 3.5rem;

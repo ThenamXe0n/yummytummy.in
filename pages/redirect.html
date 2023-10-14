@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .loading {
+        background: linear-gradient(45deg, rgb(166, 0, 255), rgb(192, 0, 222));
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        z-index: 2222;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+
+      .link-hov{
+        color: hotpink;
+        filter: drop-shadow(0px 6px 10px rgb(193, 3, 164));
+      }
+
+      .link-hov:hover{
+        color: black;
+        font-weight: bold;
+        transition: 250ms ease;
+        scale: 1.5;
+        filter: none;
+
+      }
+
+      .loading img {
+        width: 25rem;
+        position: absolute;
+        top: 150px;
+      }
+      .btn {
+        height: 4.5rem;
+        width: 319px;
+        background-color: hotpink;
+        color: aliceblue;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        border: none;
+        box-shadow: 0px 6px 36px #00000066;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 5rem;
+        box-shadow: 0px 8px 1px black;
+        transition: 520ms
+    linear(
+      0 0%,
+      0 2.27%,
+      0.02 4.53%,
+      0.04 6.8%,
+      0.06 9.07%,
+      0.1 11.33%,
+      0.14 13.6%,
+      0.25 18.15%,
+      0.39 22.7%,
+      0.56 27.25%,
+      0.77 31.8%,
+      1 36.35%,
+      0.89 40.9%,
+      0.85 43.18%,
+      0.81 45.45%,
+      0.79 47.72%,
+      0.77 50%,
+      0.75 52.27%,
+      0.75 54.55%,
+      0.75 56.82%,
+      0.77 59.1%,
+      0.79 61.38%,
+      0.81 63.65%,
+      0.85 65.93%,
+      0.89 68.2%,
+      1 72.7%,
+      0.97 74.98%,
+      0.95 77.25%,
+      0.94 79.53%,
+      0.94 81.8%,
+      0.94 84.08%,
+      0.95 86.35%,
+      0.97 88.63%,
+      1 90.9%,
+      0.99 93.18%,
+      0.98 95.45%,
+      0.99 97.73%,
+      1 100%
+    );
+      }
+      .btn:hover {
+        height: 4.5rem;
+        width: 319px;
+        background-color: hotpink;
+        color: aliceblue;
+        font-size: 1.5rem;
+        transform: translateY(10px);
+        border: 3px solid black;
+        box-shadow: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 5rem;
+        
+      }
+      .submit-text {
+        position: relative;
+        top: 40%;
+        width: inherit;
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+        font-family: "Sofia";
+      }
+    </style>
+    <title>Yummy Tummy</title>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <div class="loading">
+      <img src="../images/logo.png" />
+      <div
+        style="
+          position: relative;
+          top: 50%;
+          text-align: center;
+          background-image: url(/images/logo.png);
+          background-size: cover;
+        "
+        class="spinner-border text-primary"
+        role="status"
+      ></div>
+      <div class="submit-text">
+        <p
+          style="
+            padding: 0px 8px;
+            margin-top: 4rem;
+            text-align: center;
+            line-height: 1.5;
+            color: white;
+            font-size: 1.6rem;
+          "
+        >
+          Website is Under construction!<br>More features to be added soon <br> Use contact form to send queries or
+          you can mail us on :<a class="link-hov" href=mailto:"support@yummytummybakers.in"> support@yummytummybakers.in.</a><br>Thank You For Visiting 😊.
+        </p>
+        <a href="../index.html"><button class="btn">
+         Go Back To Home ↩ 
+        </button></a>
+      </div>
+    </div>
+  </body>
+</html>

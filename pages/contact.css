@@ -36,6 +36,7 @@ label {
   padding: 0.625rem 1rem;
   border: none;
   background-color: #5233e0;
+  cursor: pointer;
   color: white;
   box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.58);
   width: 100%;

@@ -51,7 +51,24 @@
   /* align-items: end; */
   justify-content: center;
 }
+.brownies{
+  background: url(https://therealfooddietitians.com/wp-content/uploads/2016/02/No-Bake-Brownies-10-e1549807075719.jpg);
+  background-size: cover;
 
+}
+.puffs{
+  background: url(https://abicake.com/wp-content/uploads/2020/09/chicken-puffs.jpg);
+  background-size: cover;
+}
+.sandwiches{
+  background: url(https://assets.newatlas.com/dims4/default/9e59ea8/2147483647/strip/true/crop/1620x1080+1+0/resize/840x560!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fsandwich-warming-2.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.pasta{
+  background: url(https://www.ecuisine.ro/wp-content/uploads/2016/09/spaghette-clasice-1200x742.jpg);
+  background-size: cover;
+}
 .pastries {
   background: url(https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
